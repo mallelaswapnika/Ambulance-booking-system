@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospital Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h2 class="app-title">Ambulance Booking system</h2>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="dashboard-hospital.html">Main page</a>
+        <div class="collapse navbar-collapse show">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="dashboard-hospital.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">View Request</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Reset status</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container container-narrow my-4">
+    <div class="glass p-3">
+      <div class="table-responsive">
+        <table class="table table-hover align-middle">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Hospital ID</th>
+              <th>Hospital Location</th>
+              <th class="text-center">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>1</td>
+              <td>Hyderabad</td>
+              <td class="text-center">
+                <div class="d-inline-flex btn-gap">
+                  <button class="btn btn-outline-danger btn-sm" data-reject>Reject</button>
+                  <button class="btn btn-outline-success btn-sm" data-accept>Accept</button>
+                  <button class="btn btn-primary btn-sm" data-check>Check</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- shared modal -->
+  <div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title" id="detailModalLabel">Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="detailModalBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
