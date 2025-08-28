@@ -4,3 +4,4 @@ An Ambulance Booking System is a software platform designed to enable users to r
 •Hospital Registration: Hospitals accept the user bookings and assigns the ambulance to user
 This system helps streamline emergency medical responses, reducing response times and enhancing the
 overall efficiency of emergency medical services.
+
